@@ -19,6 +19,8 @@
 		F1DA8D63296DBCE900BF3F1C /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DA8D62296DBCE900BF3F1C /* ProgressBar.swift */; };
 		F1DA8D65296DBDA600BF3F1C /* AnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DA8D64296DBDA600BF3F1C /* AnswerRow.swift */; };
 		F1DA8D67296DC06A00BF3F1C /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DA8D66296DC06A00BF3F1C /* QuestionView.swift */; };
+		F1DA8D69296DC29000BF3F1C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DA8D68296DC29000BF3F1C /* Data.swift */; };
+		F1DA8D6B296F0C4700BF3F1C /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DA8D6A296F0C4700BF3F1C /* QuizManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		F1DA8D62296DBCE900BF3F1C /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		F1DA8D64296DBDA600BF3F1C /* AnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRow.swift; sourceTree = "<group>"; };
 		F1DA8D66296DC06A00BF3F1C /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		F1DA8D68296DC29000BF3F1C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F1DA8D6A296F0C4700BF3F1C /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +113,6 @@
 				F1DA8D5C296DBAB300BF3F1C /* Components */,
 				F1DA8D5D296DBAD900BF3F1C /* Views */,
 				F1DA8D31296DBA8700BF3F1C /* Country_Flag_QuizApp.swift */,
-				F1DA8D33296DBA8700BF3F1C /* ContentView.swift */,
 				F1DA8D37296DBA8800BF3F1C /* Preview Content */,
 			);
 			path = "Country Flag Quiz";
@@ -144,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				F1DA8D5E296DBB4600BF3F1C /* Question.swift */,
+				F1DA8D68296DC29000BF3F1C /* Data.swift */,
+				F1DA8D6A296F0C4700BF3F1C /* QuizManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 		F1DA8D5D296DBAD900BF3F1C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F1DA8D33296DBA8700BF3F1C /* ContentView.swift */,
 				F1DA8D66296DC06A00BF3F1C /* QuestionView.swift */,
 			);
 			path = Views;
@@ -300,9 +306,11 @@
 				F1DA8D5F296DBB4600BF3F1C /* Question.swift in Sources */,
 				F1DA8D34296DBA8700BF3F1C /* ContentView.swift in Sources */,
 				F1DA8D67296DC06A00BF3F1C /* QuestionView.swift in Sources */,
+				F1DA8D6B296F0C4700BF3F1C /* QuizManager.swift in Sources */,
 				F1DA8D63296DBCE900BF3F1C /* ProgressBar.swift in Sources */,
 				F1DA8D65296DBDA600BF3F1C /* AnswerRow.swift in Sources */,
 				F1DA8D32296DBA8700BF3F1C /* Country_Flag_QuizApp.swift in Sources */,
+				F1DA8D69296DC29000BF3F1C /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
