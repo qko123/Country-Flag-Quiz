@@ -10,7 +10,7 @@ import SwiftUI
 class QuizManager: ObservableObject {
     var questions = Data().questions
     @Published private(set) var index = 0
-    @Published private(set) var gameOver = false
+    @Published private(set) var playingGame = false
     @Published private(set) var answerSelected = false
     @Published private(set) var country = ""
     @Published private(set) var answerChoices = [Answer]()
@@ -24,7 +24,7 @@ class QuizManager: ObservableObject {
         index = 0
         score = 0
         progress = 0.0
-        gameOver = false
+        playingGame = true
         goToNextQuestion()
     }
     func goToNextQuestion() {
@@ -37,7 +37,7 @@ class QuizManager: ObservableObject {
             index += 1
         }
         else {
-            gameOver = true
+            playingGame = false
         }
     }
     func selectAnswer(answer: Answer) {

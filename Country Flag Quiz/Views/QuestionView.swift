@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct QuestionView: View {
+    @EnvironmentObject var quizManager: QuizManager
     var body: some View {
+        if quizManager.playingGame {
         VStack(spacing: 20) {
             HStack {
                 Text("Country Flag Quiz")
@@ -16,21 +18,22 @@ struct QuestionView: View {
                     .font(.title)
                     .fontWeight(.heavy)
                 Spacer()
-                Text("1 out of 3")
+                Text("\(quizManager.index) out of \(quizManager.questions.count)")
                     .foregroundColor(.yellow)
                     .fontWeight(.heavy)
             }
-            ProgressBar(progress: 50)
+            ProgressBar(progress: quizManager.progress)
             VStack(spacing: 20) {
                 Text("What country's flag is this?")
                     .font(.title)
-                Image("Italy")
+                Image(quizManager.country)
                     .resizable()
                     .frame(width: 300, height: 200)
-                AnswerRow(answer: Answer(text: "France", isCorrect: false))
-                AnswerRow(answer: Answer(text: "Germany", isCorrect: false))
-                AnswerRow(answer: Answer(text: "Italy", isCorrect: true))
-                AnswerRow(answer: Answer(text: "England", isCorrect: false))
+                ForEach(quizManager.answerChoices) {
+                    answer in
+                    AnswerRow(answer: answer)
+                        .environmentObject(quizManager)
+                }
             }
             CustomButton(text: "Next")
             Spacer()
@@ -38,6 +41,7 @@ struct QuestionView: View {
         .padding()
         .frame(width: .infinity, height: .infinity)
         .background(.cyan)
+        }
     }
 }
 
