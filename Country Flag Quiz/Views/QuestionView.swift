@@ -35,12 +35,35 @@ struct QuestionView: View {
                         .environmentObject(quizManager)
                 }
             }
-            CustomButton(text: "Next")
+            Button {
+                quizManager.goToNextQuestion()
+            }
+        label: {
+            CustomButton(text: "Next", background: quizManager.answerSelected ? .yellow : .gray)
+        }
+        .disabled(!quizManager.answerSelected)
             Spacer()
         }
         .padding()
         .frame(width: .infinity, height: .infinity)
         .background(.cyan)
+        }
+        else {
+            VStack(spacing: 20) {
+                Text("Country Flag Quiz")
+                    .font(.title)
+                Text("Congratulations! You have completed the quiz.")
+                Text("You scored \(quizManager.score) out of \(quizManager.questions.count)")
+                Button {
+                    quizManager.reset()
+                } label: {
+                    CustomButton(text: "Play Again")
+                }
+            }
+            .foregroundColor(.yellow)
+            .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(.cyan)
         }
     }
 }

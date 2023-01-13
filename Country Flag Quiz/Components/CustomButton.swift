@@ -19,6 +19,7 @@ struct CustomButton: View {
             .cornerRadius(25)
             .shadow(radius: 10)
     }
+        
 }
 
 struct CustomButton_Previews: PreviewProvider {
