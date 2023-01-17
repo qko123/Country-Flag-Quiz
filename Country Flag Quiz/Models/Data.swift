@@ -209,7 +209,7 @@ struct Data {
 
                 Answer(text: "Israel", isCorrect: false),
 
-                Answer(text: "Peru", isCorrect: false),
+                Answer(text: "Iran", isCorrect: false),
 
                 Answer(text: "United States", isCorrect: false)
 
@@ -226,7 +226,7 @@ struct Data {
 
                 Answer(text: "Angola", isCorrect: false),
 
-                Answer(text: "China", isCorrect: false),
+                Answer(text: "Ghana", isCorrect: false),
 
                 Answer(text: "England", isCorrect: false)
 
@@ -350,8 +350,93 @@ struct Data {
                 Answer(text: "Germany", isCorrect: false)
 
            ])
+        
+        ,
+        
+        
+        Question(correctAnswer:
+
+                Answer(text: "Ghana", isCorrect: true),
+
+                 incorrectAnswer: [
+
+                Answer(text: "South Africa", isCorrect: false),
+
+                Answer(text: "Estonia", isCorrect: false),
+
+                Answer(text: "Morocco", isCorrect: false)
+
+           ])
+        
+        ,
+        
+        
+        Question(correctAnswer:
+
+                Answer(text: "Iran", isCorrect: true),
+
+                 incorrectAnswer: [
+
+                Answer(text: "Pakistan", isCorrect: false),
+
+                Answer(text: "Saudi Arabia", isCorrect: false),
+
+                Answer(text: "Israel", isCorrect: false)
+
+           ])
+        
+        ,
+        
+        
+        Question(correctAnswer:
+
+                Answer(text: "Liberia", isCorrect: true),
+
+                 incorrectAnswer: [
+
+                Answer(text: "Norway", isCorrect: false),
+
+                Answer(text: "Peru", isCorrect: false),
+
+                Answer(text: "United States", isCorrect: false)
+
+           ])
+        
+        ,
+        
+        
+        Question(correctAnswer:
+
+                Answer(text: "Morocco", isCorrect: true),
+
+                 incorrectAnswer: [
+
+                Answer(text: "Portugal", isCorrect: false),
+
+                Answer(text: "Spain", isCorrect: false),
+
+                Answer(text: "Germany", isCorrect: false)
+
+           ])
+        
+        ,
+        
+        
+        Question(correctAnswer:
+
+                Answer(text: "Portugal", isCorrect: true),
+
+                 incorrectAnswer: [
+
+                Answer(text: "Estonia", isCorrect: false),
+
+                Answer(text: "Austria", isCorrect: false),
+
+                Answer(text: "Ghana", isCorrect: false)
+
+           ])
 
     ]
 
 }
-// 4Angola, 4Austria, 4China, 4England, 4Estonia, 4France, 4Germany, 4Greece, 4India, 4Israel, 4Italy, 4Norway, 4Pakistan, 4Peru, 4Saudi Arabia, 4South Africa, 4Spain, 4Sweden, 4Ukraine, 4United States //
+// 4Angola, 4Austria, 4China, 4England, 4Estonia, 4France, 4Germany, 4Greece, 4India, 4Israel, 4Italy, 4Norway, 4Pakistan, 4Peru, 4Saudi Arabia, 4South Africa, 4Spain, 4Sweden, 4Ukraine, 4United States, 4Ghana, 4Iran, Liberia, Morocco, Portugal //
