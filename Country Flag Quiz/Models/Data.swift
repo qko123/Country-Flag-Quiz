@@ -54,13 +54,31 @@ struct Data {
 
                  incorrectAnswer: [
 
-                Answer(text: "Austria", isCorrect: true),
+                Answer(text: "Austria", isCorrect: false),
 
                 Answer(text: "Italy", isCorrect: false),
 
                 Answer(text: "Czech Republic", isCorrect: false)
 
            ])
+        
+        ,
+        
+        
+        Question(correctAnswer:
+
+                Answer(text: "Greece", isCorrect: true),
+
+                 incorrectAnswer: [
+
+                Answer(text: "Norway", isCorrect: false),
+
+                Answer(text: "Pakistan", isCorrect: false),
+
+                Answer(text: "Israel", isCorrect: false)
+
+           ])
+
 
  
 
