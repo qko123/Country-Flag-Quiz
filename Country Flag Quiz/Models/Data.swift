@@ -175,7 +175,7 @@ struct Data {
 
                 Answer(text: "Austria", isCorrect: false),
 
-                Answer(text: "Astonia", isCorrect: false),
+                Answer(text: "Morocco", isCorrect: false),
 
                 Answer(text: "Pakistan", isCorrect: false)
 
